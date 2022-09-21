@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>OncOrg</title>
+</head>
+
+<h1>OncOrg</h1>
+<p>Nos conte um pouco sobre sua empresa</p>
+Qual a sua empresa?: <br>
+<input id="in_emp"> <br>
+Nome dos medicamentos armazenados: <br>
+<input id="in_med1"> <input id="in_med2"> <input id="in_med3"> <br>
+remédios perdidos no mes: <br>
+<input id="in_perd"> <br>
+Valor medio dos remédios: <br>
+<input id="in_vmed"> <br>
+<button onclick="cons()">Calculo das percas</button>
+<div id="div_cons"></div>
+
+<body></body>
+</html>
+<script>
+    function cons() {
+        var emp = in_emp.value
+        var med1 = in_med1.value
+        var med2 = in_med2.value
+        var med3 = in_med3.value
+        var perd = Number(in_perd.value)
+        var vmed = Number(in_vmed.value)
+        var percaM = vmed*perd
+        var percaA = (perd*12)*vmed
+        
+
+        if (med2==''){
+             div_cons.innerHTML = `A nossa solução irá ajudar o(a) ${emp} no armazenamento do ${med1}.<br> E diminuir o seu despedicio que atualmente é de ${percaM} no mês, e de ${percaA}no ano`
+        } else {
+            if (med3=='') {
+            div_cons.innerHTML = `A nossa solução irá ajudar o(a) ${emp} no armazenamento do ${med1} e ${med2}.<br> E diminuir o seu despedicio que atualmente é de ${percaM} no mês, e de ${percaA} no ano`
+            } else {
+                div_cons.innerHTML = `A nossa solução irá ajudar o(a) ${emp} no armazenamentos do ${med1}, ${med2} e ${med3}.<br> E diminuir o seu despedicio que atualmente é de ${percaM} no mês, e de ${percaA} no ano`
+
+            }
+        }
+        
+        
+
+           
+
+    }
+</script>

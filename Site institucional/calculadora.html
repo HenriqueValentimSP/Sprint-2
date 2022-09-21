@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><center>
+    Nome do medicamento<br>
+    <input id="in_1"><br>
+    preço médio por unidade<br>
+    <input  id="in_2"><br>
+    Quantas unidades desperdiçadas por mês<br>
+    <input id="in_3"><br><br><br>
+    <Button onclick="calc1()">7 dias</Button>
+    <button onclick="calc2()">1 Mês</button>
+    <button onclick="calc3()">1 ano</button>
+    <div id="d_1">
+
+    </div>
+
+</center>
+</body>
+</html>
+<script>
+    function calc1() {
+        var nome = in_1.value
+        var preco = Number(in_2.value)
+        var unid = Number(in_3.value)
+        var uniddia = (preco * unid)/30
+        var resultf = uniddia * 7
+        d_1.innerHTML = `Sua empresa está desperdiçando 
+        R$${resultf} de ${nome}<br>`
+            
+    }
+    function calc2(){
+        var nome = in_1.value
+        var preco = Number(in_2.value)
+        var unid = Number(in_3.value)
+        var uniddia = (preco * unid)/30
+        var resultf1 = uniddia * 30
+        d_1.innerHTML += `Sua empresa está desperdiçando 
+        R$${resultf1} de ${nome}<br>`
+    }
+    function calc3(){
+        var nome = in_1.value
+        var preco = Number(in_2.value)
+        var unid = Number(in_3.value)
+        var uniddia = (preco * unid)/30
+        var resultf2 = uniddia * 365
+        d_1.innerHTML += `Sua empresa está desperdiçando 
+        R$${resultf2} de ${nome}<br>`
+    }
+</script>

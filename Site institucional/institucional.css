@@ -43,9 +43,8 @@ body{
 }
 
 .botoes {
-    margin-right: 0;
     width: 33%; 
-    text-align: end;
+    text-align: center;
 }
 
 ul{
