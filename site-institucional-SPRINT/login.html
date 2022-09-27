@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
     <title>Document</title>
 </head>
 
 <body>
 
-    <header>
+    <!-- <header>
         <div class="navbar">
             <div class="logo">
                 <img src="imgs/remedio.png" alt="" width="40%">
@@ -33,25 +33,45 @@
             </div>
         </div>
         <hr>
-    </header>
+    </header> -->
 
     <div class="corpo">
+
+
         <div class="formulario">
+            <h1>Bem Vindo Novamente!</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus iusto, fuga voluptatibus quos eligendi
+            </p>
             <div class="campo">
-                <label for="in_login">Login</label><br>
+                <label for="in_login">Login</label>
                 <input type="text" id="in_login" placeholder="email@email.com">
             </div>
             <div class="campo">
-                <label for="in_senha">Senha</label><br>
+                <label for="in_senha">Senha</label>
                 <input type="password" id="in_senha" placeholder="************">
+                <div class="campoCheck">
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkRemember">
+                        <label for="checkRemember">Lembre-se de mim</label>
+                    </div>
+                    <p>Esqueci a senha</p>
+                 </div>
+            
             </div>
+
             <div class="button2">
+
                 <button class="login" onclick="logar()">Logar</button>
             </div>
+
+        </div>
+
+        <div class="capa">
+
         </div>
     </div>
 
-    <footer>
+    <!-- <footer>
         <span class="titleFooter"> Contatos:</span>
 
         <img class="contato" src="imgs/email.png" alt="">
@@ -61,7 +81,7 @@
         <img class="contato" src="imgs/twitter.png" alt="">
         <br>
         <span class="titleFooter"> &copy; 2022 - SPTech</span>
-    </footer>
+    </footer> -->
 
 </body>
 
@@ -69,11 +89,11 @@
 
 <script>
 
-    function logar(){
+    function logar() {
         var email = in_login.value
         var senha = in_senha.value
 
-        if(email == 'adm@gmail.com' && senha == '1234'){
+        if (email == 'adm@gmail.com' && senha == '1234') {
             window.location.href = 'index.html'
         }
     }

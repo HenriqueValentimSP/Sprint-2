@@ -1,0 +1,91 @@
+.corpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* border-top: 2px solid #42baca;
+    border-bottom: 2px solid #42baca; */
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding:2%;
+}
+
+.campo{
+    margin: 2% 0;
+}
+
+
+.campo input{
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 5%;    
+}
+
+
+.campoCheck{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    justify-content: flex-end;
+    align-items: baseline;
+    width: 110%;
+    white-space: nowrap;
+    gap:20%;
+}
+
+.campoCheck p{
+    color:red;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.checkbox input{
+    height: 2%;
+}
+
+
+.button2{
+    width: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.capa{
+    width: 50vw;
+    height: 100vh;
+    background-image: url('../imgs/medicamentosOnco.jpg'); 
+    background-position: center;
+    background-size: cover;
+}
+
+.capa img{
+    width: 50%;
+    height: 100%;
+    background-repeat:round;
+    margin: 0;
+}
+
+
+footer{
+    position:fixed;
+    bottom: 0;
+}
