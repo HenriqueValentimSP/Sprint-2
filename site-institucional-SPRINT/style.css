@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #eee;
+}
+
+
+header{
+    margin-top: 2%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    align-items: baseline;
+}
+
+
+.logo{
+    width: min-content;
+    display: flex;
+    justify-content:center; /* horizontal*/
+    align-items: flex-end; /* vertical*/
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    width: 30%;
+    justify-content: space-between;
+}
+
+
+.button{
+    display: flex;
+    width: 15%;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.login, .logout{
+    width: 5vw;
+    height: 4vh;
+    border-radius: 10px;
+    border: 2px solid rgb(124, 207, 218);
+}
+
+
+.login{
+    background-color:#eee;
+    transition: 0.5s;
+}
+
+.login:hover{
+    background-color:#ddd;
+    transition: 0.5s;
+    cursor:pointer;
+}
+
+.logout{
+    color: #eee;
+    background-color: rgb(90, 203, 218);
+    cursor:pointer;
+    transition: 0.5s;
+}
+
+.logout:hover{
+    background-color: #42baca;
+    transition: 0.5s;
+}
+
+hr{
+    width: 90%;
+    margin: 2% 5% 0 ;
+}
+
+.corpo .parte1, .parte2{
+
+    width: 100%;
+    height: 50vh;
+}
+
+.parte1{
+    margin-top: 2%;
+    background-color: #eee;
+}
+
+.parte2{
+    
+    background-color: rgba(90, 203, 218, 0.418);
+}
+
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: #169cad;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.contato{
+    height: 50%;
+}
+
+.titleFooter{
+    color:#fff;
+    
+}

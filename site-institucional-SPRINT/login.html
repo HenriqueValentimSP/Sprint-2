@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="imgs/remedio.png" alt="" width="40%">
+                <span class="logo">ONCOTECH</span>
+            </div>
+            <ul class="menu">
+                <li>Quem somos</li>
+                <li>\</li>
+                <li>Serviços</li>
+                <li>\</li>
+                <li>Como funciona</li>
+                <li>\</li>
+                <li>Contato</li>
+            </ul>
+            <div class="button">
+                <button class="login">Sign In</button>
+                <button class="logout">Sign Up</button>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <div class="corpo">
+        <div class="formulario">
+            <div class="campo">
+                <label for="in_login">Login</label><br>
+                <input type="text" id="in_login" placeholder="email@email.com">
+            </div>
+            <div class="campo">
+                <label for="in_senha">Senha</label><br>
+                <input type="password" id="in_senha" placeholder="************">
+            </div>
+            <div class="button2">
+                <button class="login" onclick="logar()">Logar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span class="titleFooter"> Contatos:</span>
+
+        <img class="contato" src="imgs/email.png" alt="">
+        <img class="contato" src="imgs/facebook.png" alt="">
+        <img class="contato" src="imgs/insta.png" alt="">
+        <img class="contato" src="imgs/linkedIn.png" alt="">
+        <img class="contato" src="imgs/twitter.png" alt="">
+        <br>
+        <span class="titleFooter"> &copy; 2022 - SPTech</span>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+
+    function logar(){
+        var email = in_login.value
+        var senha = in_senha.value
+
+        if(email == 'adm@gmail.com' && senha == '1234'){
+            window.location.href = 'index.html'
+        }
+    }
+
+</script>
