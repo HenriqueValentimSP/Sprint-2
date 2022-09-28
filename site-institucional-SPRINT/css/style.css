@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #eee;
+    background-color: #fff;
 }
 
 
@@ -57,12 +57,12 @@ header{
 
 
 .login{
-    background-color:#eee;
+    background-color:#fff;
     transition: 0.5s;
 }
 
 .login:hover{
-    background-color:#ddd;
+    background-color:#eee;
     transition: 0.5s;
     cursor:pointer;
 }

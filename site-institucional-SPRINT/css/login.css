@@ -1,3 +1,14 @@
+.logo{
+    align-items: center;
+    position: fixed;
+    margin: 1% 0 0 2%;
+}
+
+.logo img{
+    width: 50%;
+}
+
+
 .corpo{
     display: flex;
     justify-content: center;
@@ -7,7 +18,7 @@
 }
 
 
-.formulario{
+.formLogin{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -15,20 +26,44 @@
     border-bottom: 2px solid #42baca; */
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 40%;
     padding:2%;
 }
 
+
+.formulario{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.formulario h1{
+    font-weight: 300;
+    margin-bottom: 2%;
+}
+
+
 .campo{
-    margin: 2% 0;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    width: 100%;
 }
 
 
 .campo input{
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    font-size: 16px;
+    background-color: #fff;
     padding: 10px;
     width: 100%;
     margin-top: 5%;    
+    border:none;
+    border-bottom: 1px solid;
+}
+
+.campo input:focus{
+    outline: 0;
 }
 
 
@@ -36,11 +71,12 @@
     display: flex;
     flex-direction: row;
     font-size: 12px;
-    justify-content: flex-end;
     align-items: baseline;
-    width: 110%;
+    justify-content: space-between;
+    width: 100%;
     white-space: nowrap;
-    gap:20%;
+    margin-top: 3%;
+    font-size: 13px;
 }
 
 .campoCheck p{
@@ -53,7 +89,11 @@
     align-items: baseline;
     justify-content: flex-start;
     white-space: nowrap;
-    width: 100%;
+    gap:3%
+}
+
+.campoCheck a{
+    text-decoration:none;
 }
 
 .checkbox input{
@@ -62,15 +102,30 @@
 
 
 .button2{
-    width: 150%;
+    margin-top: 5%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.button2 .login{
+    width: 100%;
+}
+
+
+.degrade{
+    position: fixed;
+    width: 10%;
+    left: 40%;
+    height: 100%;
+    background-image: linear-gradient(to right, #fff , #fff, rgba( 255, 255, 255, 0.6), transparent);
+}
+
+
 
 .capa{
-    width: 50vw;
+    width: 60vw;
     height: 100vh;
     background-image: url('../imgs/medicamentosOnco.jpg'); 
     background-position: center;
