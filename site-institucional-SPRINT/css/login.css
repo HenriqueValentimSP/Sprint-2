@@ -41,6 +41,7 @@
 .formulario h1{
     font-weight: 300;
     margin-bottom: 2%;
+    white-space: nowrap;
 }
 
 
