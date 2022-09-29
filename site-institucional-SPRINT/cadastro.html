@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/pilulas-3.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <div class="logo">
+        <img src="imgs/pilulas-3.png" alt="">
+        <span class="logoTitle">ONCOTECH</span>
+    </div>
+    <div class="corpo">
+        <div class="capa">
+
+        </div>
+        <div class="degrade">
+
+        </div>
+
+        <div class="formLogin">
+            <div class="formulario">
+                <div class="h1">
+                    <h1>Cadastro</h1>
+                </div>
+
+                </p>
+                <div class="campo">
+                    <input type="text" id="in_primeiroNome" placeholder="Primeiro nome">
+                    <input type="text" id="in_sobrenome" placeholder="Sobrenome">
+                </div>
+                <div class="campo">
+                    <input type="number" id="in_telefone" placeholder="Telefone">
+                </div>
+                <div class="campo">
+                    <input type="number" id="in_email" placeholder="Email">
+                </div>
+                <div class="campo">
+                    <input type="text" id="in_senha" placeholder="Senha">
+                    <input type="text" id="in_confirmarSenha" placeholder="Confirmar Senha">
+
+                </div>
+                <div class="campoCheck">
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkRemember">
+                        <label for="checkRemember">Aceito <b>todos</b> os termos de uso</label>
+                    </div>
+                </div>
+                <div class="button2">
+                    <button class="login" onclick="logar()">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    function logar() {
+        var email = in_login.value
+        var senha = in_senha.value
+
+        if (email == 'adm@gmail.com' && senha == '1234') {
+            window.location.href = 'index.html'
+        }
+    }
+
+</script>

@@ -121,6 +121,7 @@
     left: 40%;
     height: 100%;
     background-image: linear-gradient(to right, #fff , #fff, rgba( 255, 255, 255, 0.6), transparent);
+    z-index: 1;
 }
 
 
@@ -131,17 +132,13 @@
     background-image: url('../imgs/medicamentosOnco.jpg'); 
     background-position: center;
     background-size: cover;
+    filter: blur(2px);
 }
+
 
 .capa img{
     width: 50%;
     height: 100%;
     background-repeat:round;
     margin: 0;
-}
-
-
-footer{
-    position:fixed;
-    bottom: 0;
 }
