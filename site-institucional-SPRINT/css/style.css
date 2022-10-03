@@ -22,7 +22,7 @@ header{
     display: flex;
     justify-content: space-between;
     width: 85%;
-    align-items: baseline;
+    align-items: center;
 }
 
 
@@ -30,13 +30,13 @@ header{
     width: min-content;
     display: flex;
     justify-content:center; /* horizontal*/
-    align-items: flex-end; /* vertical*/
+    align-items: center; /* vertical*/
 }
 
 .menu{
     display: flex;
     list-style: none;
-    width: 30%;
+    width: 45%;
     justify-content: space-between;
 }
 
