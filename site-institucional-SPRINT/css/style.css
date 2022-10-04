@@ -85,7 +85,7 @@ hr{
 }
 
 .corpo .parte1, .parte2{
-
+     padding: 15px;
     width: 100%;
     height: 50vh;
 }
