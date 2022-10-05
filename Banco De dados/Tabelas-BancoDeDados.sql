@@ -13,7 +13,6 @@ fkMatriz int,
 foreign key (fkMatriz) references unidade(idUnidade)
 );
 
-
 create table setor(
 idSetor int auto_increment,
 nomeSetor varchar(45),
@@ -22,7 +21,6 @@ fkUnidade int,
 foreign key (fkUnidade) references unidade(idUnidade),
 primary key (idSetor,fkUnidade)
 );
-
 
 create table remedio(
 idRemedio int primary key auto_increment,
@@ -36,11 +34,16 @@ validade date,
 fkSetor int,
 foreign key (fkSetor) references setor(idSetor)
 );
+
 create table sensor(
-idSensor int auto_increment,
+idSensor int,
 nomeSensor varchar(45),
 temperatura decimal(5,2),
 umidade decimal(5,2),
 fkSetor int,
-foreign key (fkSetor) references setor(idSetor,fkUnidade)
+fkUnidade int,
+foreign key (fkSetor) references setor(idSetor),
+foreign key (fkUnidade) references unidade(idUnidade),
+primary key (idSensor,fkSetor,fkUnidade) 
 );
+
