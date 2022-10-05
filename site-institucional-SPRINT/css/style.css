@@ -177,6 +177,9 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: absolute;
+    bottom: 0px;
+    
 
 }
 
@@ -188,3 +191,33 @@ footer{
     color:#fff;
     
 }
+
+.filho{
+    
+    justify-content: center;
+    padding: 75px 700px;
+    display: flex;
+    /* background-image: url("https://blog.vindi.com.br/wp-content/uploads/2020/09/servicos-cloud-scaled.jpg");
+    background-size:cover ;
+    background-repeat: no-repeat; */
+}
+.neto{
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    /* justify-content: center; */
+    
+
+}
+
+.pai{
+    padding: 100px 0;
+    height: 30px;
+    background-image: url("https://blog.vindi.com.br/wp-content/uploads/2020/09/servicos-cloud-scaled.jpg");
+    background-size:cover ;
+    background-repeat: no-repeat; 
+
+}
+    
+
+
