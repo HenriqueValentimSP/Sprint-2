@@ -6,6 +6,14 @@
 
 body{
     background-color: #fff;
+    
+}
+
+
+
+a{
+    text-decoration: none;
+    color:#000;
 }
 
 
@@ -33,6 +41,10 @@ header{
     align-items: center; /* vertical*/
 }
 
+.logo img{
+    width: 2vw;
+}
+
 .menu{
     display: flex;
     list-style: none;
@@ -52,7 +64,7 @@ header{
     width: 5vw;
     height: 4vh;
     border-radius: 10px;
-    border: 2px solid rgb(124, 207, 218);
+    border: 2px solid #5acbda;
 }
 
 
@@ -69,7 +81,7 @@ header{
 
 .logout{
     color: #eee;
-    background-color: rgb(90, 203, 218);
+    background-color: #5acbda;
     cursor:pointer;
     transition: 0.5s;
 }
@@ -81,23 +93,79 @@ header{
 
 hr{
     width: 90%;
-    margin: 2% 5% 0 ;
+    margin: 2% 5% 0;
 }
 
-.corpo .parte1, .parte2{
-     padding: 15px;
+.corpo{
+    
+    margin: 0 2% 0 2%;
+}
+
+.parte1, .parte2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 50vh;
+    height: 80vh;
+    
 }
 
 .parte1{
     margin-top: 2%;
-    background-color: #eee;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
 }
+
+.imagemModelo{
+    display: flex;
+    height: 100%;
+    
+}
+
+.textoPrincipal{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+
+
+.textoPrincipal a{
+    margin-top: 7%;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+
+
+.title{
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.textoChamativo{
+    color:#5acbda;
+}
+
+
+.imagemModeloBaixo{
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+  
+}
+
+.parte1 img{
+    height: 20%;
+}
+
 
 .parte2{
     
-    background-color: rgba(90, 203, 218, 0.418);
+    background-color: #5acbda2c;
 }
 
 footer{
