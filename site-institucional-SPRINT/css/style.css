@@ -4,12 +4,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background-color: #fff;
-    
+html{
+    scroll-behavior: smooth;
 }
 
-
+body{
+    background-color: #fff; 
+}
 
 a{
     text-decoration: none;
@@ -97,8 +98,7 @@ hr{
 }
 
 .corpo{
-    
-    margin: 0 2% 0 2%;
+    margin-top: 3%;
 }
 
 .parte1, .parte2{

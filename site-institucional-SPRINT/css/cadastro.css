@@ -1,8 +1,9 @@
 .logo{
     align-items: center;
     position: fixed;
-    margin: 1% 0 0 93%;
+    margin: 1% 0 0 90%;
     z-index: 1;
+    width:min-content;
 }
 
 .logo img{
@@ -15,7 +16,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 100%;
+    margin-left: -1%;
 }
 
 
