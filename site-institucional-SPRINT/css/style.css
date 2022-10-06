@@ -99,7 +99,7 @@ hr{
 }
 
 
-.parte1, .parte2{
+.apresentacao, .sobreNos{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,16 +108,16 @@ hr{
 
 }
 
-.parte1{
+.apresentacao{
     margin-top: 2%;
     background-color: #fff;
     display: flex;
     justify-content: space-around;
 }
 
-.parte1 .imagemModelo{
+.apresentacao .imagemModelo{
     height: 100%;
-    width: 25%;
+    width: 40%;
     background-image: url("../imgs/imagemModelo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -161,13 +161,14 @@ hr{
    
 }
 
-.parte1 img{
+.apresentacao img{
     height: 20%;
 }
 
 
-.parte2{
-    
+.sobreNos{
+    display: flex;
+    flex-direction: column;
     background-color: #5acbda2c;
 }
 
@@ -179,10 +180,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: absolute;
-    bottom: 0px;
-    
-
 }
 
 .contato{
