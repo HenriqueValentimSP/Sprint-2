@@ -26,6 +26,18 @@ header{
     align-items: center;
     
 }
+li{
+    
+    display: inline-block;
+}
+
+a{
+    color:#2c2c2c;
+}
+a:hover{
+    color: #5acbda;
+    transition: 0.3s all;
+}
 
 
 .navbar{
