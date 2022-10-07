@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./imgs/pilulas-3.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./imgs/pilulas2.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/login.css">
     <title>Login</title>
@@ -14,7 +14,7 @@
 <body>
    
     <div class="logo">
-        <img src="imgs/pilulas-3.png" alt="">
+        <img src="imgs/pilulas2.png" alt="">
         <span class="logoTitle">ONCOTECH</span>
     </div>
     <div class="corpo">
@@ -66,7 +66,9 @@
         var senha = in_senha.value
 
         if (email == 'adm@gmail.com' && senha == '1234') {
-            window.location.href = 'index.html'
+            window.location.href = 'dashboard.html'
+        }else{
+            alert('Preencha todas as informações')
         }
     }
 
