@@ -172,6 +172,47 @@ hr{
     background-color: #5acbda2c;
 }
 
+
+.apresentacaoIdeais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.centralizadoBaseline{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    height: min-content;
+
+}
+
+.ideais{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    text-align: justify;
+    line-height: 3rem;
+    font-size: 1rem;
+    padding: 1%;
+}
+
+.ideais img{
+    width: 50%;
+}
+
+.textoInformartivo{
+    
+}
+
+
+
 footer{
     margin-top: 10%;
     width: 100%;
