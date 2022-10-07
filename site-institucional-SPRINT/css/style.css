@@ -67,7 +67,8 @@ a:hover{
     display: flex;
     list-style: none;
     width: 45%;
-    justify-content: space-between;
+    justify-content: space-around;
+    white-space: nowrap;
 }
 
 
@@ -160,19 +161,13 @@ hr{
 .title{
     font-weight: 300;
     font-size: 2.5rem;
+    text-align: left;
 }
 
 .textoChamativo{
     color:#5acbda;
 }
 
-
-.imagemModeloBaixo{
-    display: flex;
-    align-items: flex-end;
-    height: 100%;
-   
-}
 
 .apresentacao img{
     height: 20%;
@@ -223,13 +218,16 @@ hr{
 }
 
 .ideais img{
-    width: 50%;
+    width: 45%;
 }
 
-.textoInformartivo{
-    
+.apresentacao .imagemServicos{
+    height: 100%;
+    width: 40%;
+    background-image: url("../imgs/servicos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
 
 
 footer{
@@ -256,64 +254,11 @@ footer{
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* padding: 75px 700px; */
     display: flex;
-    /* background-image: url("https://blog.vindi.com.br/wp-content/uploads/2020/09/servicos-cloud-scaled.jpg");
-    background-size:cover ;
-    background-repeat: no-repeat; */
-}
-/* .neto{
-    background-image: url("../imgs/tecnologia.jpg");
-    background-size: cover;
-    height: 100px;
-    padding: 10px;
-    list-style: none;
-    display: flex;
-    align-items:flex-start;
-    flex-direction: column;
-    /* justify-content: center; */
-
-/* } */
-
-.apresentacao .imagemServicos{
-    background-image: url("../imgs/servicos.jpg");
-    height: 100%;
-    width: 40%;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .apresentacao img{
     height: 20%;
     justify-content: space-between;
 }
-
-.ideais{
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    flex-direction: column;
-}
-
-.ideais img{
-    /* width: 50%; */
-    height: 300px;
-    margin:  10px;
-}
-.apresentacaoservicos{
-    background-color: #5acbda2c;
-    padding: 1%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 80vh;
-    
-    
-    
-    justify-content: space-between;
-}
-
-    
-
 
