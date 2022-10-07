@@ -171,6 +171,12 @@ hr{
     flex-direction: column;
     background-color: #5acbda2c;
 }
+.comoFunciona{
+    display: flex;
+    justify-content: center;
+    background-color: #5acbda2c;
+    height: 80vh;
+}
 
 footer{
     margin-top: 10%;
