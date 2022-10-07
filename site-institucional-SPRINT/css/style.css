@@ -26,6 +26,18 @@ header{
     align-items: center;
     
 }
+li{
+    
+    display: inline-block;
+}
+
+a{
+    color:#2c2c2c;
+}
+a:hover{
+    color: #5acbda;
+    transition: 0.3s all;
+}
 
 
 .navbar{
@@ -170,6 +182,12 @@ hr{
     display: flex;
     flex-direction: column;
     background-color: #5acbda2c;
+}
+.comoFunciona{
+    display: flex;
+    justify-content: center;
+    background-color: #5acbda2c;
+    height: 80vh;
 }
 
 
