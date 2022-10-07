@@ -19,36 +19,43 @@ a{
     color:#000;
 }
 
-li{
-    margin: 10px;
-    list-style: none  ;
-}
-header{
-    margin-top: 2%;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-li{
-    
-    display: inline-block;
-}
-
 a{
     color:#2c2c2c;
 }
+
 a:hover{
     color: #5acbda;
     transition: 0.3s all;
 }
 
+li{
+    
+    display: inline-block;
+}
+
+
+li{
+    margin: 10px;
+    list-style: none  ;
+}
+
+
+header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding-top: 2%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
 
 .navbar{
     display: flex;
     justify-content: space-between;
     width: 85%;
     align-items: center;
+    
 }
 
 
@@ -99,7 +106,7 @@ a:hover{
 }
 
 .logout{
-    color: #eee;
+    color: #fff;
     background-color: #5acbda;
     cursor:pointer;
     transition: 0.5s;
@@ -121,12 +128,12 @@ hr{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
 
 }
 
 .apresentacao{
-    margin-top: 2%;
+    padding-top: 5%;
     background-color: #fff;
     display: flex;
     justify-content: space-around;
@@ -134,7 +141,7 @@ hr{
 
 .apresentacao .imagemModelo{
     height: 100%;
-    width: 40%;
+    width: 50%;
     background-image: url("../imgs/imagemModelo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -177,6 +184,8 @@ hr{
 .sobreNos{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-items: flex-start;
     background-color: #5acbda2c;
 }
 .comoFunciona{
@@ -192,7 +201,7 @@ hr{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
@@ -203,7 +212,6 @@ hr{
     align-items: baseline;
     justify-content: center;
     height: min-content;
-
 }
 
 .ideais{
