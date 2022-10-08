@@ -70,6 +70,10 @@ header{
     width: 2vw;
 }
 
+.logo:hover {
+
+}
+
 .menu{
     display: flex;
     list-style: none;
@@ -168,7 +172,7 @@ hr{
 .title{
     font-weight: 300;
     font-size: 2.5rem;
-    text-align: left;
+    
 }
 
 .textoChamativo{
@@ -182,17 +186,48 @@ hr{
 
 
 .sobreNos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: flex-start;
-    background-color: #5acbda2c;
+    background-image: url('../imgs/sobreNos.jpg');
+    width: 100%;
+    height: 100vh;   
+    background-size: cover;
+    
 }
+
+.opaca{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.textoContornado{   
+    font-size: 3em;
+    margin: 0 1%;
+    text-align: justify;
+    /* -webkit-text-stroke: 0.5px #fff; */
+}
+
+.titleEspacamento{
+    
+    margin-top:10%;
+}
+/* 
+.sobreNos .img{
+    background-image: url('../imgs/sobreNos.jpg');
+    width: 100%;
+    height: 50vh;
+    
+    background-size: cover;
+} */
+
 .comoFunciona{
     display: flex;
     justify-content: center;
     background-color: #5acbda2c;
-    height: 80vh;
+    height: 100vh;
 }
 
 
@@ -203,14 +238,11 @@ hr{
     width: 100%;
     height: 100vh;
     background-color: #fff;
-    display: flex;
-    justify-content: space-between;
 }
 
 .centralizadoBaseline{
     display: flex;
     align-items: baseline;
-    justify-content: center;
     height: min-content;
 }
 
@@ -229,9 +261,14 @@ hr{
     width: 45%;
 }
 
+.textoInformativo{
+    font-size: 1.2rem;
+    word-spacing: 10px;
+}
+
 .apresentacao .imagemServicos{
     height: 100%;
-    width: 40%;
+    width: 50%;
     background-image: url("../imgs/servicos.jpg");
     background-size: cover;
     background-repeat: no-repeat;
