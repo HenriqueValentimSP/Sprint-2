@@ -226,6 +226,9 @@ hr{
     width: 50%;
 }
 
+.textoInformartivo{
+    
+}
 
 
 
@@ -290,7 +293,6 @@ footer{
     align-items: center;
     justify-items: center;
     flex-direction: column;
-    height: 80vh;
 }
 
 .ideais img{
@@ -306,7 +308,8 @@ footer{
     justify-content: center;
     width: 100%;
     height: 80vh;
-
+    
+    
     
     justify-content: space-between;
 }
