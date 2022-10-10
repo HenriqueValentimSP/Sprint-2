@@ -22,6 +22,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    /* border-top: 2px solid #42baca;
+    border-bottom: 2px solid #42baca; */
     justify-content: center;
     align-items: center;
     width: 40%;

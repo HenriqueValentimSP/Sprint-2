@@ -19,43 +19,36 @@ a{
     color:#000;
 }
 
-a{
-    color:#2c2c2c;
+li{
+    margin: 10px;
+    list-style: none  ;
 }
-
-a:hover{
-    color: #5acbda;
-    transition: 0.3s all;
+header{
+    margin-top: 2%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
-
 li{
     
     display: inline-block;
 }
 
-
-li{
-    margin: 10px;
-    list-style: none  ;
+a{
+    color:#2c2c2c;
+}
+a:hover{
+    color: #5acbda;
+    transition: 0.3s all;
 }
 
-
-header{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    padding-top: 2%;
-    background-color: rgba(255, 255, 255, 0.6);
-}
 
 .navbar{
     display: flex;
     justify-content: space-between;
     width: 85%;
     align-items: center;
-    
 }
 
 
@@ -70,16 +63,11 @@ header{
     width: 2vw;
 }
 
-.logo:hover {
-
-}
-
 .menu{
     display: flex;
     list-style: none;
     width: 45%;
-    justify-content: space-around;
-    white-space: nowrap;
+    justify-content: space-between;
 }
 
 
@@ -110,7 +98,7 @@ header{
 }
 
 .logout{
-    color: #fff;
+    color: #eee;
     background-color: #5acbda;
     cursor:pointer;
     transition: 0.5s;
@@ -132,12 +120,12 @@ hr{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
 
 }
 
 .apresentacao{
-    padding-top: 5%;
+    margin-top: 2%;
     background-color: #fff;
     display: flex;
     justify-content: space-around;
@@ -145,7 +133,7 @@ hr{
 
 .apresentacao .imagemModelo{
     height: 100%;
-    width: 50%;
+    width: 40%;
     background-image: url("../imgs/imagemModelo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -172,7 +160,6 @@ hr{
 .title{
     font-weight: 300;
     font-size: 2.5rem;
-    
 }
 
 .textoChamativo{
@@ -181,55 +168,28 @@ hr{
 }
 
 
+.imagemModeloBaixo{
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+   
+}
+
 .apresentacao img{
     height: 20%;
 }
 
 
 .sobreNos{
-    background-image: url('../imgs/sobreNos.jpg');
-    width: 100%;
-    height: 100vh;   
-    background-size: cover;
-    
-}
-
-.opaca{
     display: flex;
-    justify-items: center;
-    align-items: center;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #5acbda2c;
 }
-
-.textoContornado{   
-    font-size: 3em;
-    margin: 0 1%;
-    text-align: justify;
-    /* -webkit-text-stroke: 0.5px #fff; */
-}
-
-.titleEspacamento{
-    
-    margin-top:10%;
-    margin-bottom: 2%;
-}
-/* 
-.sobreNos .img{
-    background-image: url('../imgs/sobreNos.jpg');
-    width: 100%;
-    height: 50vh;
-    
-    background-size: cover;
-} */
-
 .comoFunciona{
     display: flex;
     justify-content: center;
     background-color: #5acbda2c;
-    height: 100vh;
+    height: 80vh;
 }
 
 
@@ -238,14 +198,18 @@ hr{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-color: #fff;
+    display: flex;
+    justify-content: space-between;
 }
 
 .centralizadoBaseline{
     display: flex;
     align-items: baseline;
+    justify-content: center;
     height: min-content;
+
 }
 
 .ideais{
@@ -260,22 +224,17 @@ hr{
 }
 
 .ideais img{
-    width: 45%;
-}
-
-.textoInformativo{
-    font-size: 1.2rem;
-    word-spacing: 10px;
-}
-
-.apresentacao .imagemServicos{
-    height: 100%;
     width: 50%;
-    background-image: url("../imgs/servicos.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
+<<<<<<< HEAD
+=======
+.textoInformartivo{
+    
+}
+
+
+>>>>>>> 793c6c766ac5b1c5908097c09fe9c0f64e7d3292
 
 footer{
     margin-top: 10%;
@@ -301,13 +260,70 @@ footer{
     align-items: center;
     justify-content: center;
     text-align: center;
+    /* padding: 75px 700px; */
     display: flex;
+    /* background-image: url("https://blog.vindi.com.br/wp-content/uploads/2020/09/servicos-cloud-scaled.jpg");
+    background-size:cover ;
+    background-repeat: no-repeat; */
+}
+/* .neto{
+    background-image: url("../imgs/tecnologia.jpg");
+    background-size: cover;
+    height: 100px;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    /* justify-content: center; */
+
+/* } */
+
+.apresentacao .imagemServicos{
+    background-image: url("../imgs/servicos.jpg");
+    height: 100%;
+    width: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .apresentacao img{
     height: 20%;
     justify-content: space-between;
 }
+<<<<<<< HEAD
 .ideais .textoChamativo{
+=======
+
+.ideais{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.ideais img{
+    /* width: 50%; */
+    height: 300px;
+    margin:  10px;
+}
+.apresentacaoservicos{
+    background-color: #5acbda2c;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    
+    
+>>>>>>> 793c6c766ac5b1c5908097c09fe9c0f64e7d3292
     
 }
+<<<<<<< HEAD
+=======
+
+    
+
+
+>>>>>>> 793c6c766ac5b1c5908097c09fe9c0f64e7d3292
