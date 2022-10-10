@@ -1,0 +1,310 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fff;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+a{
+    color:#2c2c2c;
+}
+
+a:hover{
+    color: #5acbda;
+    transition: 0.3s all;
+}
+
+li{
+    
+    display: inline-block;
+}
+
+
+li{
+    margin: 10px;
+    list-style: none  ;
+}
+
+
+header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding-top: 2%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    align-items: center;
+    
+}
+
+
+.logo{
+    width: min-content;
+    display: flex;
+    justify-content:center; /* horizontal*/
+    align-items: center; /* vertical*/
+}
+
+.logo img{
+    width: 2vw;
+}
+
+.logo:hover {
+
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    width: 45%;
+    justify-content: space-around;
+    white-space: nowrap;
+}
+
+
+.button{
+    display: flex;
+    width: 15%;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.login, .logout{
+    width: 5vw;
+    height: 4vh;
+    border-radius: 10px;
+    border: 2px solid #5acbda;
+}
+
+
+.login{
+    background-color:#fff;
+    transition: 0.5s;
+}
+
+.login:hover{
+    background-color:#eee;
+    transition: 0.5s;
+    cursor:pointer;
+}
+
+.logout{
+    color: #fff;
+    background-color: #5acbda;
+    cursor:pointer;
+    transition: 0.5s;
+}
+
+.logout:hover{
+    background-color: #42baca;
+    transition: 0.5s;
+}
+
+hr{
+    width: 90%;
+    margin: 2% 5% 0;
+}
+
+
+.apresentacao, .sobreNos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.apresentacao{
+    padding-top: 5%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.apresentacao .imagemModelo{
+    height: 100%;
+    width: 50%;
+    background-image: url("../imgs/imagemModelo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.textoPrincipal{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+
+
+.textoPrincipal a{
+    margin-top: 7%;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+
+
+.title{
+    font-weight: 300;
+    font-size: 2.5rem;
+    
+}
+
+.textoChamativo{
+    color:#5acbda;
+}
+
+
+.apresentacao img{
+    height: 20%;
+}
+
+
+.sobreNos{
+    background-image: url('../imgs/sobreNos.jpg');
+    width: 100%;
+    height: 100vh;   
+    background-size: cover;
+    
+}
+
+.opaca{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.textoContornado{   
+    font-size: 3em;
+    margin: 0 1%;
+    text-align: justify;
+    /* -webkit-text-stroke: 0.5px #fff; */
+}
+
+.titleEspacamento{
+    
+    margin-top:10%;
+    margin-bottom: 2%;
+}
+/* 
+.sobreNos .img{
+    background-image: url('../imgs/sobreNos.jpg');
+    width: 100%;
+    height: 50vh;
+    
+    background-size: cover;
+} */
+
+.comoFunciona{
+    display: flex;
+    justify-content: center;
+    background-color: #5acbda2c;
+    height: 100vh;
+}
+
+
+.apresentacaoIdeais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.centralizadoBaseline{
+    display: flex;
+    align-items: baseline;
+    height: min-content;
+}
+
+.ideais{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    text-align: justify;
+    line-height: 3rem;
+    font-size: 1rem;
+    padding: 1%;
+}
+
+.ideais img{
+    width: 45%;
+}
+
+.textoInformativo{
+    font-size: 1.2rem;
+    word-spacing: 10px;
+}
+
+.apresentacao .imagemServicos{
+    height: 100%;
+    width: 50%;
+    background-image: url("../imgs/servicos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+footer{
+    margin-top: 10%;
+    width: 100%;
+    height: 20vh;
+    background-color: #169cad;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contato{
+    height: 50%;
+}
+
+.titleFooter{
+    color:#fff;
+    
+}
+
+.filho{
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.apresentacao img{
+    height: 20%;
+    justify-content: space-between;
+}
+

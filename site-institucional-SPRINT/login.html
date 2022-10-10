@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/pilulas2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+   
+    <div class="logo">
+        <img src="imgs/pilulas2.png" alt="">
+        <span class="logoTitle">ONCOTECH</span>
+    </div>
+    <div class="corpo">
+        <div class="formLogin">
+            <div class="formulario">
+                <img src="./imgs/login.png" alt="" width="50%"><br>
+                <h1>Bem Vindo Novamente!</h1>
+                <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus iusto, fuga voluptatibus quos
+                    eligendi -->
+                </p>
+                <div class="campo">
+                    <!-- <label for="in_login">Login</label> -->
+                    <input type="text" id="in_login" placeholder="Email">
+                </div>
+                <div class="campo">
+                    <!-- <label for="in_senha">Senha</label> -->
+                    <input type="password" id="in_senha" placeholder="Senha">
+                    <div class="campoCheck">
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkRemember">
+                            <label for="checkRemember">Lembre-se de mim</label>
+                        </div>
+                        <a href=""><p>Esqueci a senha</p></a>
+                    </div>
+                </div>
+                <div class="button2">
+                    <button class="login" onclick="logar()">Logar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="degrade">
+
+        </div>
+
+        <div class="capa">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    function logar() {
+        var email = in_login.value
+        var senha = in_senha.value
+
+        if (email == 'adm@gmail.com' && senha == '1234') {
+            window.location.href = 'dashboard.html'
+        }else{
+            alert('Preencha todas as informações')
+        }
+    }
+
+</script>
