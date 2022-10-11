@@ -141,7 +141,7 @@ hr{
 
 .apresentacao .imagemModelo{
     height: 100%;
-    width: 45%;
+    width: 50%;
     background-image: url("../imgs/imagemModelo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -312,14 +312,15 @@ footer{
     justify-content: space-between;
 }
 
-.txtComo{
+aside{
+    
+}
 
+.txtComo{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 10%;
-    padding-bottom: 2%;
-
+    padding-top: 7%;
 }
 
 .txtDuvida{
