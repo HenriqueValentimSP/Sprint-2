@@ -70,10 +70,6 @@ header{
     width: 2vw;
 }
 
-.logo:hover {
-
-}
-
 .menu{
     display: flex;
     list-style: none;
@@ -145,20 +141,36 @@ hr{
 
 .apresentacao .imagemModelo{
     height: 100%;
-    width: 50%;
+    width: 45%;
     background-image: url("../imgs/imagemModelo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.textoServicos{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
 .textoPrincipal{
     display:flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     justify-content: center;
     width: 50%;
 }
 
+.listaServicos{
+
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+    font-size: 21px;
+    
+    
+}
 
 
 .textoPrincipal a{
@@ -207,7 +219,6 @@ hr{
     font-size: 3em;
     margin: 0 1%;
     text-align: justify;
-    /* -webkit-text-stroke: 0.5px #fff; */
 }
 
 .titleEspacamento{
@@ -215,18 +226,11 @@ hr{
     margin-top:10%;
     margin-bottom: 2%;
 }
-/* 
-.sobreNos .img{
-    background-image: url('../imgs/sobreNos.jpg');
-    width: 100%;
-    height: 50vh;
-    
-    background-size: cover;
-} */
 
 .comoFunciona{
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #5acbda2c;
     height: 100vh;
 }
@@ -255,7 +259,7 @@ hr{
     text-align: justify;
     line-height: 3rem;
     font-size: 1rem;
-    padding: 1%;
+    padding: 3%;
 }
 
 .ideais img{
@@ -264,7 +268,7 @@ hr{
 
 .textoInformativo{
     font-size: 1.2rem;
-    word-spacing: 10px;
+    word-spacing: 5px;
 }
 
 .apresentacao .imagemServicos{
@@ -306,5 +310,40 @@ footer{
 .apresentacao img{
     height: 20%;
     justify-content: space-between;
+}
+
+.txtComo{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10%;
+    padding-bottom: 2%;
+
+}
+
+.txtDuvida{
+
+    margin-top: 10%;
+
+}
+
+.form-inter{
+
+    text-align: center;
+
+}
+
+.diagrama{
+
+    background-image:url('../imgs/diagramaneg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 70vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    border:1px solid black;
+
 }
 
