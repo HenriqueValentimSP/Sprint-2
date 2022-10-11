@@ -1,0 +1,108 @@
+.logo{
+    align-items: center;
+    position: fixed;
+    margin: 1% 0 0 90%;
+    z-index: 1;
+    width:min-content;
+}
+
+.logo img{
+    height: 50%;
+}
+
+
+.corpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: -1%;
+}
+#title{
+    flex-direction: column;
+    line-height: 30px;
+    
+}
+
+body{
+    background-color: antiquewhite;
+    color: black;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    padding-top: 2%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+}
+h1{
+    font-size: 55px;
+    line-height: 10px;
+    margin-top: 30px;
+}
+p{
+    line-height: 20px;
+    margin-top: 60px;
+    max-width: 500px;
+}
+h3{
+    margin-top: 50px;
+}
+span{
+    color: rgb(30, 202, 233);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 10px;
+
+}
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color:rgb(30, 202, 233);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+form [type="submit"]:hover{
+   cursor: pointer;
+}
+input{
+    margin-top: 20px;
+    height: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+
+}
+#input2{
+    height: 40px;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
