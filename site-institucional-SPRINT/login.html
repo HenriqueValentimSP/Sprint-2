@@ -12,11 +12,13 @@
 </head>
 
 <body>
-   
-    <div class="logo">
-        <img src="imgs/pilulas2.png" alt="">
-        <span class="logoTitle">ONCOTECH</span>
-    </div>
+    <a href="index.html">
+        <div class="logo">
+            <img src="imgs/pilulas2.png" alt="">
+            <span class="logoTitle">ONCOTECH</span>
+
+        </div>
+    </a>
     <div class="corpo">
         <div class="formLogin">
             <div class="formulario">
@@ -37,7 +39,9 @@
                             <input type="checkbox" id="checkRemember">
                             <label for="checkRemember">Lembre-se de mim</label>
                         </div>
-                        <a href=""><p>Esqueci a senha</p></a>
+                        <a href="">
+                            <p>Esqueci a senha</p>
+                        </a>
                     </div>
                 </div>
                 <div class="button2">
@@ -67,7 +71,7 @@
 
         if (email == 'adm@gmail.com' && senha == '1234') {
             window.location.href = 'dashboard.html'
-        }else{
+        } else {
             alert('Preencha todas as informações')
         }
     }
