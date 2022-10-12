@@ -148,6 +148,13 @@ hr{
     background-color: #fff;
     justify-content: space-around;
 }
+
+.imagemSobreNos, .imagemServicos, .imagemComoFunciona{
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 /* FINZALIZAÇÃO DO CARD USADO NA MAIORIA DAS DIVISÕES */
 
 
@@ -262,11 +269,7 @@ hr{
 
 /* ESTILIZAÇÃO DO CARD DE APRESENTAÇÃO DOS SERVIÇOS - QUARTO CARD*/
 .imagemServicos{
-    height: 100%;
-    width: 50%;
     background-image: url("../imgs/servicos.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 /* FINALIZAÇÃO ESTILIZAÇÃO DO CARD DE APRESENTAÇÃO DOS SERVIÇOS - QUARTO CARD*/
 
@@ -274,11 +277,7 @@ hr{
 
 /* ESTILIZAÇÃO DO CARD COMO FUNCIONA - QUINTO CARD */
 .imagemComoFunciona{
-    height: 100%;
-    width: 50%;
     background-image: url("../imgs/comofunciona.png");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 /* FINALIZAÇÃO DA ESTILIZAÇÃO DO CARD COMO FUNCIONA - QUINTO CARD */
 
