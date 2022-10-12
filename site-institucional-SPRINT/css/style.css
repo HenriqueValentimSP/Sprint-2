@@ -231,7 +231,6 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5acbda2c;
     height: 100vh;
 }
 
@@ -279,7 +278,18 @@ hr{
     background-repeat: no-repeat;
 }
 
+.apresentacao .imagemComoFunciona{
+    height: 100%;
+    width: 50%;
+    background-image: url("../imgs/comofunciona.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+.comoFunciona{
+    height: 50vh;
+    
+}
 footer{
     margin-top: 10%;
     width: 100%;
