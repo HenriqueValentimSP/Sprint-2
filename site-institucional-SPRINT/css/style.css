@@ -47,7 +47,7 @@ header{
     position: fixed;
     width: 100%;
     padding-top: 2%;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: #ffffff99;
 }
 
 .navbar{
@@ -234,6 +234,9 @@ hr{
     height: 100vh;
 }
 
+.servicos{
+    background-color: #3ebecf23;
+}
 
 .apresentacaoIdeais{
     display: flex;
@@ -242,6 +245,7 @@ hr{
     width: 100%;
     height: 100vh;
     background-color: #fff;
+    border-bottom: 1px solid #5acbda;
 }
 
 .centralizadoBaseline{
@@ -287,17 +291,8 @@ hr{
 }
 
 .comoFunciona{
-    height: 50vh;
-    
-}
-footer{
-    margin-top: 10%;
-    width: 100%;
-    height: 20vh;
-    background-color: #169cad;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    height: 100vh;
+    background-color: #3ebecf23;
 }
 
 .contato{
@@ -322,9 +317,6 @@ footer{
     justify-content: space-between;
 }
 
-aside{
-    
-}
 
 .txtComo{
     display: flex;
@@ -358,3 +350,12 @@ aside{
 
 }
 
+footer{
+    
+    width: 100%;
+    height: 20vh;
+    background-color: #169cad;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
