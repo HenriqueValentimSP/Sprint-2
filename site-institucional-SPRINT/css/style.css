@@ -1,3 +1,4 @@
+/* ESTILIZAÇÕES GERAIS DO SITE */
 * {
     padding: 0;
     margin: 0;
@@ -29,17 +30,15 @@ a:hover{
 }
 
 li{
-    
     display: inline-block;
-}
-
-
-li{
     margin: 10px;
     list-style: none  ;
 }
+/* FINALIZAÇÃO DAS ESTILIZAÇÕES GERAIS DO SITE */
 
 
+
+/* ESTILIZAÇÃO DO MENU */
 header{
     display:flex;
     flex-direction: column;
@@ -121,70 +120,58 @@ hr{
     width: 90%;
     margin: 2% 5% 0;
 }
+/* FINALIZAÇÃO DAS ESTILIZAÇÕES DO MENU */
 
 
-.apresentacao, .sobreNos{
+
+/* ESTILIZAÇÕES GERAIS DOS CARDS E IMAGENS DA PÁGINA INICIAL */
+.apresentacao, .sobreNos, .apresentacaoIdeais, .centralizadoBaseline, .comoFunciona{
     display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: 100vh;
-
 }
 
-.apresentacao{
-    padding-top: 5%;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-around;
-}
-
-.apresentacao .imagemModelo{
+.imagemSobreNos, .imagemServicos, .imagemServicos{
     height: 100%;
     width: 50%;
-    background-image: url("../imgs/imagemModelo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* ENCERRAMENTO DAS ESTILIZAÇÕES GERAIS DOS CARDS */ 
 
-.textoServicos{
 
-    display: flex;
-    flex-direction: column;
 
+/* CARD USADO NA MAIORIA DAS DIVISÕES*/
+.apresentacao{
+    padding-top: 5%;
+    align-items: center;
+    background-color: #fff;
+    justify-content: space-around;
 }
+/* FINZALIZAÇÃO DO CARD USADO NA MAIORIA DAS DIVISÕES */
+
+
+
+/* ESTILIZAÇÃO DO PRIMEIRO CARD DA TELA INICIAL */
+.imagemSobreNos{   
+    background-image: url("../imgs/imagemModelo.jpg");
+}
+
 
 .textoPrincipal{
     display:flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    width: 50%;
+    text-align: justify;
+    width: 40%;
+    padding: 0 5%;
 }
-
-.listaServicos{
-
-    margin-top: 6%;
-    display: flex;
-    flex-direction: column;
-    font-size: 21px;
-    
-    
-}
-
-
-.textoPrincipal a{
-    margin-top: 7%;
-    font-size: 2rem;
-    font-weight: 400;
-}
-
 
 
 .title{
     font-weight: 300;
     font-size: 2.5rem;
-    
 }
 
 .textoChamativo{
@@ -192,17 +179,24 @@ hr{
 }
 
 
-.apresentacao img{
-    height: 20%;
+.textoPrincipal a{
+    margin-top: 7%;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
 }
+/* FINALIZAÇÃO DA ESTILIZAÇÃO DO PRIMEIRO CARD DA TELA INICIAL */
 
 
+
+
+/* ESTILIZAÇÃO DA APRESENTAÇÃO SOBRE NÓS - SEGUNDO CARD*/
 .sobreNos{
     background-image: url('../imgs/sobreNos.jpg');
     width: 100%;
     height: 100vh;   
     background-size: cover;
-    
+    background-repeat: no-repeat;   
 }
 
 .opaca{
@@ -215,41 +209,35 @@ hr{
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-.textoContornado{   
-    font-size: 3em;
-    margin: 0 15%;
-    text-align: justify;
-}
-
 .titleEspacamento{
-    
     margin-top:10%;
     margin-bottom: 2%;
 }
 
-.comoFunciona{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+
+.textoContornado{   
+    margin: 0 15%;
+    text-align: justify;
 }
 
-.servicos{
-    background-color: #3ebecf23;
+.textoInformativo{
+    font-size: 1.2rem;
+    word-spacing: 5px;
 }
+/* FINALIZAÇÃO ESTILIZAÇÃO DA APRESENTAÇÃO SOBRE NÓS - SEGUNDO CARD*/
 
+
+
+
+/* ESTILIZAÇÃO DO CARD MISSÃO, VISÃO E VALORES - TERCEIRO CARD*/
 .apresentacaoIdeais{
-    display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100vh;
     background-color: #fff;
     border-bottom: 1px solid #5acbda;
 }
 
 .centralizadoBaseline{
-    display: flex;
     align-items: baseline;
     height: min-content;
 }
@@ -268,31 +256,47 @@ hr{
 .ideais img{
     width: 45%;
 }
+/* FINALIZAÇÃO DA ESTILIZAÇÃO DO CARD MISSÃO, VISÃO E VALORES - TERCEIRO CARD*/
 
-.textoInformativo{
-    font-size: 1.2rem;
-    word-spacing: 5px;
-}
 
-.apresentacao .imagemServicos{
+
+/* ESTILIZAÇÃO DO CARD DE APRESENTAÇÃO DOS SERVIÇOS - QUARTO CARD*/
+.imagemServicos{
     height: 100%;
     width: 50%;
     background-image: url("../imgs/servicos.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* FINALIZAÇÃO ESTILIZAÇÃO DO CARD DE APRESENTAÇÃO DOS SERVIÇOS - QUARTO CARD*/
 
-.apresentacao .imagemComoFunciona{
+
+
+/* ESTILIZAÇÃO DO CARD COMO FUNCIONA - QUINTO CARD */
+.imagemComoFunciona{
     height: 100%;
     width: 50%;
     background-image: url("../imgs/comofunciona.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* FINALIZAÇÃO DA ESTILIZAÇÃO DO CARD COMO FUNCIONA - QUINTO CARD */
 
-.comoFunciona{
-    height: 100vh;
+
+
+/* SE COLOCAR ELE ANTES DAS DEMAIS ESTILIZAÇÕES, NÃO SERÁ APLICADO */
+.fundoAlternativo{
     background-color: #3ebecf23;
+}
+/* SE COLOCAR ELE ANTES DAS DEMAIS ESTILIZAÇÕES, NÃO SERÁ APLICADO */
+
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: #169cad;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .contato{
@@ -304,58 +308,6 @@ hr{
     
 }
 
-.filho{
-    margin: 0px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-}
-
-.apresentacao img{
-    height: 20%;
-    justify-content: space-between;
-}
 
 
-.txtComo{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 7%;
-}
 
-.txtDuvida{
-
-    margin-top: 10%;
-
-}
-
-.form-inter{
-
-    text-align: center;
-
-}
-
-.diagrama{
-
-    background-image:url('../imgs/diagramaneg.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    height: 70vh;
-    margin-left: 15%;
-    margin-right: 15%;
-    border:1px solid black;
-
-}
-
-footer{
-    
-    width: 100%;
-    height: 20vh;
-    background-color: #169cad;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
