@@ -9,6 +9,7 @@ numero varchar(45),
 bairro varchar(45),
 cep char(8),
 complemento varchar(45),
+cnpj char(14),
 fkMatriz int,
 foreign key (fkMatriz) references unidade(idUnidade)
 );
@@ -21,10 +22,11 @@ foreign key (fkUnidade) references unidade(idUnidade),
 primary key (idSetor,fkUnidade)
 );
 
+
 create table remedio(
 idRemedio int primary key auto_increment,
 nomeRemedio varchar (45),
-quantidade int (45),
+quantidade int,
 valor decimal(7,2),
 tempIdeal decimal(5,2),
 umidIdeal decimal(5,2),
@@ -62,15 +64,15 @@ primary key (idUsuario, fkUnidade)
 
 -- INSERT UNIDADE
 
-insert into unidade(nomeUnidade, rua, numero, bairro, cep, complemento, fkMatriz) values
-	('Albert Einstein','evaldo calabrez','280', 'guaianases', '08411330', 'A', null),
-    ('Salvaluz','alameda santos',426,'mooca',04516781,null,null);
+insert into unidade(nomeUnidade, rua, numero, bairro, cep, complemento, cnpj, fkMatriz) values
+	('Albert Einstein','evaldo calabrez','280', 'guaianases', '08411330', 'A','21234654000187', null),
+    ('Salvaluz','alameda santos',426,'mooca',04516781,null,'12345123000180', null);
     
-insert into unidade(nomeUnidade, rua, numero, bairro, cep, complemento, fkMatriz) values
-	('São Carlos', 'geraldo mitico', '65', 'Ferraz', '08330411', null, 1),
-    ('São Jose', 'Airton', '1200', 'Jose dos campos', '08450340','bloco B', 1),
-	('Lumens','carmen',120,'suzano',0892179,'posto B',4),
-	('Lumens2','forbi',10,'osasco',0893234,null,4);
+insert into unidade(nomeUnidade, rua, numero, bairro, cep, complemento, cnpj, fkMatriz) values
+	('São Carlos', 'geraldo mitico', '65', 'Ferraz', '08330411', null,'64758234000198', 1),
+    ('São Jose', 'Airton', '1200', 'Jose dos campos', '08450340','bloco B','16253476000198', 1),
+	('Lumens','carmen',120,'suzano',0892179,'posto B','75647596000198',4),
+	('Lumens2','forbi',10,'osasco',0893234,null,'98756423000118',4);
 
 
 -- insert usuarios
@@ -92,8 +94,8 @@ insert into setor(nomeSetor, localSetor, fkUnidade) values
     ('Gerenciamento de remédio', 'ala 5',4),
     ('controle de temperatura e umidade', 'setor 4',5),
     ('Grenciamento de remédio', 'ala 7',6);
-    
-insert into remedio(nomeRemedio, quantidade, valor,tempIdeal, umiIdeal, lote, validade, fkSetor) values
+    desc remedio;
+insert into remedio(nomeRemedio, quantidade, valor,tempIdeal, umidIdeal, lote, validade, fkSetor) values
 	('anastrozol', 10, 139.90, 20, 70, 33, '2024-08-09',1),
     ('ácido zoledrônico', 10, 139.90, 20, 70, 33, '2023-12-25',2),
     ('bicalutamida', 10, 139.90, 20, 70, 33, '2023-11-23',3),
@@ -109,3 +111,20 @@ insert into sensor values
     (4, 'dht11', 23, 73, 4, 4),
     (5, 'dht11', 24, 69, 5, 5),
     (6, 'dht11', 20, 70, 6, 6);
+    
+    
+desc unidade;
+desc usuario;
+desc setor;
+desc remedio;
+desc sensor;
+
+select * from unidade as u join unidade as m
+	on u.fkMatriz = m.idUnidade join setor
+		on setor.fkUnidade = u.idUnidade join remedio
+			on remedio.fkSetor = idSetor join sensor
+				on sensor.fkSetor = idSetor;
+                
+select * from usuario as f join usuario as r
+	on f.fkResponsavel = r.idUsuario left join unidade 
+		on f.fkUnidade = idUnidade;
