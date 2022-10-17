@@ -12,7 +12,7 @@
 </head>
 <body>
     <!--Header-->
-    <!-- <header>
+    <header>
         <div class="navbar">
             <div class="logo">
                 <img src="imgs/pilulas2.png" alt="">
@@ -30,64 +30,62 @@
                 <a href="simulador.html"><li>Simulador Financeiro</li></a>
             </ul>
             <div class="button">
-                <a href="login.html"><button class="login">Sign In</button></a>
-                <a href="cadastro.html"><button class="logout" onclick="">Sign Up</button></a>
+                <a href="index.html"><button class="logout" onclick="">Sign Up</button></a>
             </div>
         </div>
-        <hr>
-    </header> -->
+    </header>
     <!--Fim Header-->
+    <div class="conteudoDash">
+        <h2>Monitoramento semanal</h2>
+        <div class="containerdash">
+            <div class="dash">
 
-    <h2>Painel de Monitoramento</h2>
+                <!--Gráficos-->
+                
+                <div class="contGraf">
+                    <h3>Medidas médias por horário</h3>
+                    <canvas id="Linhas" class="grafico"></canvas>
+                </div>
 
-    <div class="dash">
+                <div class="contGraf">
+                    <h3>Medianas da semana</h3>
+                    <canvas id="Barras" class="grafico"></canvas>
+                </div>
 
-        <!--Gráficos-->
-        
-        <div class="contGraf">
-            <h3>Monitoramento do dia</h3>
-            <canvas id="Linhas" class="grafico"></canvas>
+            </div>
         </div>
+        <div class="contKpi">
 
-        <div class="contGraf">
-            <h3>Medianas da semana</h3>
-            <canvas id="Barras" class="grafico"></canvas>
+
+            <!--KPI-->
+            <div class="cont1" class="cont">
+                Temperatura mais alta do dia <br><br>
+                <h1>20</h1>
+            </div>
+
+            
+            <div class="cont2" class="cont">
+                Temperatura mais baixa do dia<br><br>
+                <H1>8</H1>
+            </div>
+
+            
+            <div class="cont3" class="cont">
+                Mediana da temperatura semanal <br><br>
+                <h1>10.2</h1>
+            </div>
+
+            
+            <div class="cont3" class="cont">
+                Mediana da Umidade semanal <br><br>
+                <h1>71.5</h1>
+            </div>
+
         </div>
 
     </div>
 
-    <div class="contKpi">
 
-
-        <!--KPI-->
-        <div class="cont">
-            Temperatura mais alta do dia <br><br>
-            <h1>20</h1>
-        </div>
-
-        
-        <div class="cont">
-            Temperatura mais baixa do dia <br><br>
-            <H1>8</H1>
-        </div>
-
-        
-        <div class="cont">
-            Mediana da temperatura semanal <br><br>
-            <h1>10.2</h1>
-        </div>
-
-        
-        <div class="cont">
-            Mediana da Umidade semanal <br><br>
-            <h1>71.5</h1>
-        </div>
-
-    </div>
-
-    <!--Footer-->
-
-    <!-- <footer >
         <span class="titleFooter"><a name="contato"></a> Contatos:</span>
 
         <img class="contato" src="imgs/email.png" alt="">
@@ -97,7 +95,7 @@
         <img class="contato" src="imgs/twitter.png" alt="">
         <br>
         <span class="titleFooter"> &copy; 2022 - SPTech</span>
-    </footer> -->
+
 
 
     <!--Script Gráficos-->
