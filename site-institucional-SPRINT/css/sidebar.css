@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -130,7 +130,6 @@ label #btnSide:hover{
 .containerGeral{
     height: 100vh;
     transition: 0.5s;
-    margin-top: 20px;
     
 }
 
@@ -138,7 +137,20 @@ label #btnSide:hover{
     margin-left: 70px;
 }
 
+.logo{
+    width: min-content;
+    display: flex;
+    justify-content:center; /* horizontal*/
+    align-items: center; /* vertical*/
+}
 
+.logo img{
+    width: 2vw;
+}
 
+.logo span{
+    font-style:oblique;
+
+}
 
 
