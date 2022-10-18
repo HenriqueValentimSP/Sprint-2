@@ -95,13 +95,14 @@ header{
 label #btnSide{
     z-index: 1;
     position: fixed;
-    left: 300px;
+    left: 190px;
     color: 4e5152;
     font-size: 25px;
     margin: 5px 0;
     cursor: pointer;
     transition: 0.5s;
     transition-property: color;
+    align-items: center;
 
 }
 
