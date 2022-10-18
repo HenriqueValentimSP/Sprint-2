@@ -84,15 +84,15 @@
         var nome = inpMedi.value;
         var valor = Number(inpValor.value);
         var quant = Number(inpQuant.value);
-        var porce = quant * 0.2;
         var total = 0;
         var final = 0
-
+        
         total = valor * quant;
-
+        
         final = total - porce;
-
-        saida.innerHTML=`Comprando ${quant} caixas do medicamento ${nome} você gasta R$ ${total}<br>
+        
+        var porce = total * 0.2;
+        output.innerHTML=`Comprando ${quant} caixas do medicamento ${nome} você gasta R$ ${total}<br>
                         Porém como indicam nossas pesquisas 20% desses medicamentos são perdidos pela falta de monitoramento, o que equivale a R$ ${porce}.<br>
                         Uma perda considerável não é?`;
         
