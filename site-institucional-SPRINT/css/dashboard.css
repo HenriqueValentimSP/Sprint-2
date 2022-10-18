@@ -121,17 +121,33 @@ h2{
 
 .critico{
 
-    color: red;
+    text-shadow: 0.1em 0.1em rgba(28, 28, 29, 0.482) ;
     font-size: 20;
     font-weight: bold;
     margin:2%;
 
 }
+.temperaturaAlta{
+
+    color: #FF4500;
+    text-shadow: 0.1em 0.1em #ffa60086;
+}
 
 .atencao{
 
-    color: yellow;
     font-size: 20;
     font-weight: bold;
     margin:2%;
+}
+
+.temperaturaBaixa{
+
+    color: #00BFFF; 
+    text-shadow: 0.1em 0.1em #4683b48a;
+}
+
+.temperaturaAlarmante{
+
+    color: red;
+
 }
