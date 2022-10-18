@@ -4,12 +4,14 @@
 
 }
 
+
 header{
     position: fixed;
     background-color: #ffffff99;
     padding: 20px;
     width: 100%;
     height: 30px;
+    margin-top: -25px;
     
 
 }
@@ -124,4 +126,19 @@ label #btnSide:hover{
 #check{
     display: none;
 }
+
+.containerGeral{
+    height: 100vh;
+    transition: 0.5s;
+    margin-top: 20px;
+    
+}
+
+#check ~ .containerGeral{
+    margin-left: 70px;
+}
+
+
+
+
 

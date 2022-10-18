@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Document</title>
 </head>
@@ -21,7 +22,7 @@
 
         <div class="direita">
 
-            <a href="" class="sair">Sair</a>
+            <a href="index.html" class="sair">Sair</a>
 
         </div>
     </header>
@@ -40,31 +41,51 @@
         <a href="#"><ion-icon name="analytics"></ion-icon><span>Visão Geral</span></a>
         <a href="#"><ion-icon name="thermometer"></ion-icon><span>Setores</span></a>
         <a href="#"><ion-icon name="add-circle-outline"></ion-icon><span>Adicionar Setor</span></a>
-        <a href="#"><ion-icon name="log-out"></ion-icon><span>Sair</span></a>
+        <a href="index.html"><ion-icon name="log-out"></ion-icon><span>Sair</span></a>
 
     </div>
     <!--Fim sidebar-->
+    <div class="containerGeral">
 
-    <div class="conteudoDash">
-        <h2>Monitoramento semanal</h2>
-        <div class="containerdash">
-            <div class="dash">
+        <div class="conteudoDash">
+            
+            <h2>Visão Geral</h2>
 
-                <!--Gráficos-->
-                
-                <div class="contGraf">
-                    <h3>Medidas médias por horário</h3>
-                    <canvas id="Linhas" class="grafico"></canvas>
+            <div class="containerdash">
+
+                <div class="dash">
+
+                    <!--Gráficos-->
+                    
+                    <div class="contGraf">
+                        <h3>Medidas médias por horário</h3>
+                        <canvas id="Linhas" class="grafico"></canvas>
+                    </div>
+
+                    <div class="contGraf">
+                        <h3>Medianas da semana</h3>
+                        <canvas id="Barras" class="grafico"></canvas>
+                    </div>
+
+                </div>
+                </div>
+                <div class="containerkpi">
+                    <div class="kpi1">
+                        <div class="dado">25</div>
+                        <div class="dado">2</div>
+                        <div class="dado">2</div>
+                        <div class="dado">2</div>
+                    </div>
+
+                    <div class="kpi2">
+                        <div class="dado">25</div>
+                        <div class="dado">25</div>
+                        <div class="dado">25</div>
+                        <div class="dado">25</div>
+                    </div>
                 </div>
 
-                <div class="contGraf">
-                    <h3>Medianas da semana</h3>
-                    <canvas id="Barras" class="grafico"></canvas>
-                </div>
-
-            </div>
         </div>
-
     </div>
 
     <!--Icones-->
