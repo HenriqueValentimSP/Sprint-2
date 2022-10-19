@@ -40,11 +40,14 @@
     filter: blur(1.5px);
 }
 
-.capa img{
-    width: 50%;
-    height: 100%;
-    background-repeat:round;
-    margin: 0;
+
+.capa2{
+    width: 60%;
+    height: 100vh;
+    background-image: url('../imgs/luaeTerra.png'); 
+    
+    background-size: cover;
+    
 }
 
 
