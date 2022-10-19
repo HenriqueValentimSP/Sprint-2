@@ -41,6 +41,7 @@ idSensor int,
 nomeSensor varchar(45),
 temperatura decimal(5,2),
 umidade decimal(5,2),
+dthora dateTime,
 fkSetor int,
 fkUnidade int,
 foreign key (fkSetor) references setor(idSetor),
@@ -105,12 +106,12 @@ insert into remedio(nomeRemedio, quantidade, valor,tempIdeal, umidIdeal, lote, v
     
 
 insert into sensor values
-	(1, 'dht11', 20, 75, 1, 1),
-    (2, 'dht11', 19, 72, 2, 2),
-    (3, 'dht11', 18, 70, 3, 3),
-    (4, 'dht11', 23, 73, 4, 4),
-    (5, 'dht11', 24, 69, 5, 5),
-    (6, 'dht11', 20, 70, 6, 6);
+	(1, 'dht11', 20, 75,'2022-10-18 13:05:05', 1, 1),
+    (2, 'dht11', 19, 72,'2022-10-18 13:05:10' , 2, 2),
+    (3, 'dht11', 18, 70, '2022-10-18 13:05:15', 3, 3),
+    (4, 'dht11', 23, 73, '2022-10-18 13:05:15',4, 4),
+    (5, 'dht11', 24, 69, '2022-10-18 13:05:20',5, 5),
+    (6, 'dht11', 20, 70, '2022-10-18 13:05:25',6, 6);
     
     
 desc unidade;
