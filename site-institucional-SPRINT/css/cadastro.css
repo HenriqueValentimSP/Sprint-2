@@ -1,7 +1,7 @@
 .logo{
     align-items: center;
     position: fixed;
-    margin: 1% 0 0 90%;
+    margin: 1% 90% 0 2%;
     z-index: 1;
     width:min-content;
 }
@@ -32,12 +32,12 @@
 
 
 .capa{
-    width: 60%;
+    width: 50%;
     height: 100vh;
-    background-image: url('../imgs/telaCadastro.jpg'); 
+    background-image: url('../imgs/cadastro.png'); 
     background-position: center;
     background-size: cover;
-    filter: blur(1.5px);
+    
 }
 
 
