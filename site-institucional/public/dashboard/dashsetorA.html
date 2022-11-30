@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/sidebar2.css">
+    <link rel="stylesheet" href="./css/dashboard2.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+</head>
+<body>
+        <input type="checkbox" name="" id="check">
+        <!-- Header -->
+
+        <header>
+            <label for="check">
+                <ion-icon name="menu" id="btnSide"></ion-icon>    
+            </label>
+
+            <div class="logo"> 
+                <img src="imgs/pilulas2.png" alt="">
+                <span class="logotit"> ONCOTECH </span>
+            </div>
+
+            <div class="direita">
+
+                <a href="index.html" class="sair">Sair</a>
+
+            </div>
+        </header>
+        <!--Fim header-->
+
+        <!--Sidebar-->
+        <div class="sidebar">
+
+            <center>
+
+                <img src="./imgs/perfil.png" alt="" class="image">
+                <h2>Admin</h2>
+
+            </center>
+
+            <a href="#"><ion-icon name="analytics"></ion-icon><span>Visão Geral</span></a>
+            <a href="#"><ion-icon name="thermometer"></ion-icon><span>Setores</span></a>
+            <a href="cadastroSensor.html"><ion-icon name="add-circle-outline"></ion-icon><span>Adicionar Setor</span></a>
+            <a href="index.html"><ion-icon name="log-out"></ion-icon><span>Sair</span></a>
+
+        </div>
+        <!--Fim sidebar-->
+
+
+        <div class="containerGeral">
+            <h1>Setor 1A</h1>
+            <h2>Painel de Avisos</h2>
+            <div class="recados">
+
+                <div  class="atention"><h3>Umidade se aproximando do nível crítico</h3></div>
+                <div  class="atention"><h3>Umidade atual</h3><h1>70</h1></div>
+                <div  class="caution"><h3>Temperatura atual</h3><h1>23</h1></div>
+                <div  class="caution"><h3>Temperatura crítica</h3></div>
+
+            </div>
+
+            <div class="dash">
+
+                
+                <!--Gráficos-->
+                <div class="containerdash">     
+                    <div class="contGraf">
+                        <h3>Medidas médias por horário</h3>
+                        <canvas id="Linhas" class="grafico"></canvas>
+                    </div>
+
+                    <div class="contGraf">
+                        <h3>Medianas da semana</h3>
+                        <canvas id="Barras" class="grafico"></canvas>
+                    </div>
+                </div>   
+            </div>
+             
+
+        </div>
+
+
+        <!--Icones-->
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+         <!--Script Gráficos-->
+
+    <script>
+        //Linhas
+        const labelslin = [
+          '12:00',
+          '13:00',
+          '14:00',
+          '15:00',
+          '16:00',
+          '17:00',
+          '18:00',
+          '19:00',
+          '20:00',
+        ];
+      
+        const linhas = {
+          labels: labelslin,
+          datasets: [{
+            label: 'Temperatura',
+            backgroundColor: '#E393A6',
+            borderColor: '#E393A6',
+            data: [9, 10, 10.5, 9, 8, 13, 15, 18, 20, 15],
+        },
+        {
+            label: 'Umidade',
+            backgroundColor:  '#5acbda',
+            borderColor: '#5acbda',
+            data: [80, 76, 70, 75, 65, 73, 87, 89, 95, 85],
+        }
+        ]
+        };
+
+        //Barras
+
+        const labelsbar = [
+          'Segunda',
+          'Terça',
+          'Quarta',
+          'Quinta',
+          'Sexta',
+          'Sábado',
+          'Domingo',
+        ];
+      
+        const barras = {
+          labels: labelsbar,
+          datasets: [{
+            label: 'Mediana de Temperatura ',
+            backgroundColor: '#E393A6',
+            borderColor: '#E393A6',
+            data: [11.75, 12, 11.2, 10, 10.5, 14, 12.3],
+        },
+        {
+            label: 'Mediana de Umidade ',
+            backgroundColor:  '#5acbda',
+            borderColor: '#5acbda',
+            data: [70, 79, 73, 80, 65, 70, 70],
+        }
+        ]
+        };
+      
+        const configlin = {
+          type: 'line',
+          data: linhas,
+          options: {}
+        };
+
+        const configbar = {
+          type: 'bar',
+          data: barras,
+          options: {}
+        };
+    </script>
+    
+    <script>
+        const chLinha = new Chart(
+          document.getElementById('Linhas'),
+          configlin
+        );
+
+        const chBarra = new Chart(
+          document.getElementById('Barras'),
+          configbar
+        );
+
+    </script>
+
+
+</body>
+</html>

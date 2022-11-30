@@ -1,0 +1,51 @@
+.containerCalc{
+    padding-top: 10%;
+}
+
+.texto{
+    width: 50%;
+    height: 60vh;   
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-image: url('../imgs/simuladorFinanceiro.png' );
+}
+
+.form{
+    width: 50%;
+    height: 100%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.form input{
+    margin:1% 2% 2% 2%;
+    height: 25px;
+    border-radius: 10px;
+    border: 2px solid #5acbda;
+}
+
+.form label{
+    margin: 1%;
+}
+
+.organizador{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.organizador h1{
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.conteudoCalc{
+    display: flex;
+    flex-direction: row;
+
+}
+

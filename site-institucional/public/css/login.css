@@ -1,0 +1,159 @@
+.logo{
+    align-items: center;
+    position: fixed;
+    margin: 1% 0 0 2%;
+}
+
+.logo img{
+    height: 50%;
+}
+
+
+.corpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.formLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    width: 50%;    
+    padding:2%;
+}
+
+
+.formulario{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+.imagemLogin{
+    transition: 0.5s;
+}
+.imagemLogin:hover{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+.formulario h1{
+    margin-top: 5%;
+    font-weight: 400;
+    margin-bottom: 2%;
+    white-space: nowrap;
+}
+
+
+.campo{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+
+.campo input{
+    /* border-radius: 5px; */
+    font-size: 16px;
+    background-color: #fff;
+    padding: 10px;
+    width: 100%;
+    margin-top: 5%;    
+    border:none;
+    border-bottom: 1px solid;
+}
+
+.emailBackground{
+    background-image: url("../imgs/emailnput.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 1.3em;
+    padding-left: 1.3em;
+}
+
+
+.senhaBackground{
+    background-image: url("../imgs/senhaInput.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 1.3em;
+    padding-left: 1.3em;
+}
+
+.campo input:focus{
+    outline: 0;
+}
+
+
+.campoCheck{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+    white-space: nowrap;
+    margin-top: 3%;
+    font-size: 13px;
+}
+
+.campoCheck p{
+    color:red;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+    white-space: nowrap;
+    gap:3%
+}
+
+.campoCheck a{
+    text-decoration:none;
+}
+
+.checkbox input{
+    height: 2%;
+}
+
+
+.button2{
+    margin-top: 5%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button2 .login{
+    width: 100%;
+}
+
+
+
+.capa{
+    width: 60%;
+    height: 100vh;
+    background-image: url('../imgs/login5.png'); 
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+.capa img{
+    width: 50%;
+    height: 100%;
+    background-repeat:round;
+    margin: 0;
+}

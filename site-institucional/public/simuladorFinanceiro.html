@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/pilulas2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <title>Simulador Financeiro</title>
+</head>
+<body>
+    <header>
+        <a href="#inicio">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="assets/imgs/pilulas2.png" alt="">
+                    <span class="logoTitle">ONCOTECH</span>
+                </div>
+        </a>
+        <ul class="menu">
+            <a href="index.html#sobreNos">
+                <li>Sobre nós</li>
+            </a>
+            <li>\</li>
+            <a href="index.html#servicos">
+                <li>Serviços</li>
+            </a>
+            <li>\</li>
+            <a href="index.html#comoFunciona">
+                <li>Como Funciona</li>
+            </a>
+            <li>\</li>
+            <a href="index.html#contato">
+                <li>Contato</li>
+            </a>
+            <li>\</li>
+            <a href="#">
+                <li>Simulador Financeiro</li>
+            </a>
+        </ul>
+        <div class="button">
+            <a href="login.html"><button class="login">Entrar</button></a>
+            <a href="cadastro.html"><button class="logout" onclick="">Cadastrar</button></a>
+        </div>
+        </div>
+        <hr>
+    </header>
+
+    <div class="containerCalc">
+        <div class="organizador">
+
+            <h1>Entenda o Problema</h1>
+            <div class="conteudoCalc">
+
+                <div class="texto"></div>
+
+                <div class="form">
+                    
+                    <label for="inpMedi">Nome do medicamento</label>
+                    <input id="inpMedi" class="">
+                    
+                    <label for="inpValor">Valor do Medicamento</label>
+                    <input id="inpValor">
+
+                    <label for="inpQuant">Quantidade de caixas</label>
+                    <input id="inpQuant">
+
+                    <button onclick="calcular()" class="logout" id="btnCalc">Calcular</button>
+
+                    <div class="saida" id="output"></div>
+                </div>
+            </div>   
+        </div>
+
+    </div>
+
+
+</body>
+</html>
+<script>
+
+    function calcular(){
+        var nome = inpMedi.value;
+        var valor = Number(inpValor.value);
+        var quant = Number(inpQuant.value);
+        var total = 0;
+        var final = 0
+        
+        total = valor * quant;
+        
+        final = total - porce;
+        
+        var porce = total * 0.2;
+        output.innerHTML=`Comprando ${quant} caixas do medicamento ${nome} você gasta R$ ${total}<br>
+                        Porém como indicam nossas pesquisas 20% desses medicamentos são perdidos pela falta de monitoramento, o que equivale a R$ ${porce}.<br>
+                        Uma perda considerável não é?`;
+        
+
+    }
+
+</script>

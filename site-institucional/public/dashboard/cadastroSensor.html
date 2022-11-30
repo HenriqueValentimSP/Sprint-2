@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/pilulas2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <a href="dashgeral.html">
+        <div class="logo">
+            <img src="imgs/voltar.png" alt="">
+        </div>
+    </a>
+    <div class="corpo">
+        <div class="capa2">
+
+        </div>
+        <div class="degrade">
+
+        </div>
+
+        <div class="formLogin">
+            <div class="formulario">
+                <div class="h1">
+                    <h1>Cadastro de Sensores</h1>
+                </div>
+
+                </p>
+                <div class="campo">
+                    <input type="text" id="in_nomeSensor" placeholder="Nome Sensor">
+                    <input type="text" id="in_setor" placeholder="Setor">
+                </div>
+                <div class="campo">
+                    <input type="text" id="in_empresa" placeholder="Empresa">
+                </div>
+                <div class="campo">
+                    <input type="text" id="in_unidade" placeholder="Unidade">
+                </div>
+                <div class="campo">
+                    <input type="text" id="in_remedio" placeholder="Remédio">
+                </div>
+        
+                <div class="campoCheck">
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkRemember">
+                        <label for="checkRemember">Aceito <b>todos</b> os termos de uso</label>
+                    </div>
+                </div>
+                <div class="button2">
+                    <button class="login" onclick="cadastrar()">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    function cadastrar() {
+        var primeiroNome = in_primeiroNome.value
+        var sobrenome = in_sobrenome.value
+        var empresa = in_empresa.value
+        var unidade = in_unidade.value
+        var cargo = in_cargo.value
+        var email = in_email.value
+        var senha = in_senha.value
+        var confirmarSenha = in_confirmarSenha.value
+
+        if (primeiroNome == "" || sobrenome == "" || empresa == "" || unidade == "" || cargo == "" || email == "" || senha == "" || confirmarSenha == "") {
+            alert('Preencha todos os campos')
+        }else{
+            window.location.href = 'login.html'
+        }
+    }
+
+</script>

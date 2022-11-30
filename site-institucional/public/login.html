@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/pilulas2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="./js/funcoes.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <a href="index.html">
+        <div class="logo">
+            <img src="assets/imgs/voltar.png" alt="" >
+        </div>
+    </a>
+    <div class="corpo">
+        <div class="formLogin">
+            <div class="formulario">
+                <img src="assets/imgs/pilulas2.png" alt="" width="20%" class="imagemLogin"><br>
+                <h1>Bem vindo novamente!</h1>
+               
+                <div class="campo">
+                    <!-- <label for="in_login">Login</label> -->
+                    <input type="text" id="in_login" placeholder="Email" class="emailBackground">
+                </div>
+                <div class="campo">
+                    <!-- <label for="in_senha">Senha</label> -->
+                    <input type="password" id="in_senha" placeholder="Senha" class="senhaBackground">
+                    <div class="campoCheck">
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkRemember">
+                            <label for="checkRemember">Lembre-se de mim</label>
+                        </div>
+                        <a href="">
+                            <p>Esqueci a senha</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="button2">
+                    <button class="login" onclick="logar()">Logar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="capa">
+
+        </div>
+    </div>
+
+</body>
+
+
+</html>
+
+<script>
+
+
+    function entrar() {
+        aguardar();
+
+        var email = in_login.value
+        var senha = in_senha.value
+
+        if (email == "" || senha == "") {
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            finalizarAguardar();
+            return false;
+        }
+        else {
+            setInterval(sumirMensagem, 5000)
+        }
+
+        console.log("FORM LOGIN: ", email);
+        console.log("FORM SENHA: ", senha);
+
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: email,
+                senhaServer: senha
+            })
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+
+                    sessionStorage.EMAIL_USUARIO = json.email;
+                    sessionStorage.NOME_USUARIO = json.nome;
+                    sessionStorage.ID_USUARIO = json.id;
+
+                    setTimeout(function () {
+                        window.location = "./dashboard/cards.html";
+                    }, 1000); // apenas para exibir o loading
+
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizarAguardar(texto);
+                });
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+
+        return false;
+    }
+
+    function sumirMensagem() {
+        cardErro.style.display = "none"
+    }
+
+</script>
